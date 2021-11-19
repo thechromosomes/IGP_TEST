@@ -159,7 +159,6 @@ export default {
     },
 
     async registeruserOtp() {
-      alert("HI");
       try {
         var otpno = /^\d*(?:\.\d{1,2})?$/;
         if (this.otpNumber != "" && this.otpNumber.match(otpno)) {
