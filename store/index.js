@@ -4,6 +4,7 @@ export const state = () => ({
   store: "",
   customer_session: "",
   customer_id: "",
+  customer_token: "",
 });
 
 export const actions = {
@@ -35,6 +36,8 @@ export const mutations = {
     //   update central state
     state.customer_session = data.payload.customer_session;
     state.customer_id = data.payload.customer.id;
+    state.customer_token = data.payload.token;
+
     state.store = data.payload.store;
 
     //  update cookie
